@@ -1,0 +1,32 @@
+{
+  "name": "gamerizer",
+  "version": "0.1.0",
+  "description": "Helps randomize setups for board games.",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyuGuardian/gamerizer.git"
+  },
+  "keywords": [
+    "board",
+    "games",
+    "randomizer"
+  ],
+  "author": "Austin King",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyuGuardian/gamerizer/issues"
+  },
+  "homepage": "https://github.com/RyuGuardian/gamerizer#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
