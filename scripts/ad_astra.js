@@ -1,4 +1,7 @@
 $('.ad-astra .player-count li').on('click', function() {
+  $(this).siblings().removeClass('selected');
+  $(this).addClass('selected');
+
   //Planet count is total in game (43) minus minimum of 3 per 8 stars minus number of players.
   var planetsLeft = 19 - $(this).text();
   var stars = [3,3,3,3,3,3,3,3];
