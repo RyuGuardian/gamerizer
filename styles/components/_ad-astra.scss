@@ -1,0 +1,47 @@
+.ad-astra {
+  background-color: $adastra-section;
+  
+  header {
+    background-color: $adastra-header;
+    padding: 1em 0;
+  }
+
+  .player-count {
+    li {
+      background-color: $adastra-player-btn;
+      
+      display: inline-block;
+      padding: 1em 0;
+      width: 3em;
+      margin: 0 .5em .5em .5em;
+      border-radius: .5em;
+      
+      font-size: 1.5em;
+    }
+  }
+
+  .stars {
+    background-color: #000;
+    color: #fff;
+    
+    margin-top: .5em;
+
+    li {
+      display: inline-block;
+      width: 45%;
+      margin: .15em;
+
+      &:nth-child(odd) {
+        color: $adastra-red-star;
+      }
+
+      &:nth-child(even) {
+        color: $adastra-yellow-star;
+      }
+
+      &.planet-count {
+        color: #fff;
+      }
+    }
+  }
+}
