@@ -1,5 +1,8 @@
 header {
-  background-color: teal;
+  &.generic-header-color {
+    background-color: teal;
+  }
+
   padding: 1em 0;
 
   h1 {
