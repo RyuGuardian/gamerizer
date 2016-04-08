@@ -5,10 +5,7 @@ function namify(string) {
 }
 
 $('#nav-icon').on('click', function() {
-  console.log('nav click');
-  $navMenu = $('nav');
-
-  $navMenu.show().animate({right: '+=50%'});
+  $('nav').show().animate({right: '+=50%'});
 });
 
 $('nav').on('click', 'li', function() {
