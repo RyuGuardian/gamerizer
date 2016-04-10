@@ -5,7 +5,9 @@ function namify(string) {
 }
 
 $('#nav-icon').on('click', function() {
-  $('nav').show().animate({right: '+=50%'});
+  if($('nav').css('right') === '-50%') {
+    $('nav').show().animate({right: '+=50%'});
+  }
 });
 
 $('nav').on('click', 'li', function() {
@@ -16,9 +18,9 @@ $('nav').on('click', 'li', function() {
   $('header > h1').text(namify(navSelection));
   $('main').empty();
 
-  if(navSelection !== 'gamerizer') {
-    $('main').load('html/' + navSelection + '.html', function() {
-      $.getScript('scripts/' + navSelection + '.js');
-    });
-  }
+  $('main').load('html/' + navSelection + '.html', function() {
+    $.getScript('scripts/' + navSelection + '.js');
+  });
 });
+
+$('nav>ul>li:first').click();

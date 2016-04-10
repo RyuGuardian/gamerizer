@@ -1,7 +1,16 @@
+body {
+  background-color: $teal;
+}
+
 h1, h2 {
   font-size: 1.5em;
 }
 
 h3 {
+  padding: .75em 0;
+  font-weight: bold;
+}
+
+h4 {
   padding: .75em 0;
 }
