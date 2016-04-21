@@ -28,13 +28,14 @@ $('.decide-first').on('click', 'button', function() {
 
   var listElement = $('.decide-first ul');
 
-  listElement.next().remove();
 
   if($(this).data('first') === 'rule') {
+    $('.spinner').hide();
     listElement.after("<p>The person who " + rules[Math.floor(Math.random() * rules.length)] + " is first.</p>");
   }
   else if($(this).data('first') === 'spinner') {
-    listElement.after('<div class="spinner"></div>')
+    listElement.next().remove();
+    $('.spinner').show();
   }
 
 });
