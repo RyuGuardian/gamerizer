@@ -1,3 +1,5 @@
+var sheet = cssx();
+
 //Click on icon to slide in modal. Click on option in modal to change view.
 
 function namify(string) {

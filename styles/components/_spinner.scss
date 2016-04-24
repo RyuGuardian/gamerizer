@@ -1,5 +1,5 @@
 .spinner {
-  height: 300px;
+  padding-bottom: 1em;
 
   div {
     background-color: orange;
@@ -9,12 +9,13 @@
 
     margin: 0 auto;
 
-    img {
+    #arrow {
       height: 250px;
       width: 250px;
       
       margin: auto;
+
+      animation: spin 5s ease-out forwards;
     }
   }
-
 }

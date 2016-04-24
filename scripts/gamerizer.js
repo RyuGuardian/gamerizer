@@ -20,13 +20,14 @@ var rules = [
   "has their birthday next",
   "left the country most recently",
   "went on vacation most recently"
-  ];
+];
 
 $('.decide-first').on('click', 'button', function() {
   $(this).parent().siblings().children().removeClass('selected');
   $(this).addClass('selected');
 
   var listElement = $('.decide-first ul');
+  listElement.next().remove();
 
 
   if($(this).data('first') === 'rule') {
@@ -34,8 +35,8 @@ $('.decide-first').on('click', 'button', function() {
     listElement.after("<p>The person who " + rules[Math.floor(Math.random() * rules.length)] + " is first.</p>");
   }
   else if($(this).data('first') === 'spinner') {
-    listElement.next().remove();
     $('.spinner').show();
+    $.getScript('scripts/spinner.js');
   }
 
 });
