@@ -1,11 +1,10 @@
 var sheet = cssx();
 
-//Click on icon to slide in modal. Click on option in modal to change view.
-
 function namify(string) {
   return string.split('-').map(function(val) {return val[0].toUpperCase() + val.slice(1)}).join(' ');
 }
 
+//Click on icon to slide in menu. Click on option in menu to change view.
 $('#nav-icon').on('click', function() {
   if($('nav').css('right') === '-50%') {
     $('nav').show().animate({right: '+=50%'});
