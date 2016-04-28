@@ -30,4 +30,23 @@
       padding-top: 0;
     }
   }
+
+  .random-order {
+    padding-bottom: 0.5em;
+
+    ol {
+      padding: 0 0.5em;
+
+      & > li {
+        list-style-type: decimal;
+        margin: auto;
+        width: 90%;
+
+        & > p {
+          margin: 0.5em auto;
+          padding: 0.5em 0;
+        }
+      }
+    }
+  }
 }
