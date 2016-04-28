@@ -8,19 +8,21 @@ $('.game-turn-type').on('click', 'button', function() {
   $('.' + $(this).data('turns')).fadeIn();
 });
 
-var rules = [
-  "is the oldest",
-  "is the youngest",
-  "is tallest",
-  "is shortest",
-  "has the longest hair",
-  "has the shortest hair",
-  "has been sick most recently",
-  "had a birthday most recently",
-  "has their birthday next",
-  "left the country most recently",
-  "went on vacation most recently"
-];
+(function(window) {
+  window.rules = [
+    "is the oldest",
+    "is the youngest",
+    "is tallest",
+    "is shortest",
+    "has the longest hair",
+    "has the shortest hair",
+    "has been sick most recently",
+    "had a birthday most recently",
+    "has their birthday next",
+    "left the country most recently",
+    "went on vacation most recently"
+  ];
+}(window));
 
 $('.decide-first').on('click', 'button', function() {
   $(this).parent().siblings().children().removeClass('selected');
@@ -32,7 +34,9 @@ $('.decide-first').on('click', 'button', function() {
 
   if($(this).data('first') === 'rule') {
     $('.spinner').hide();
-    listElement.after("<p>The person who " + rules[Math.floor(Math.random() * rules.length)] + " is first.</p>");
+    listElement.after("<p>The person who "
+      + window.rules[Math.floor(Math.random() * window.rules.length)]
+      + " is first.</p>");
   }
   else if($(this).data('first') === 'spinner') {
     $('.spinner').show();
