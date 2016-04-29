@@ -1,6 +1,4 @@
-
 $('.ad-astra .player-count li').on('click', function() {
-  console.log('ad-astra click');
   $(this).siblings().removeClass('selected');
   $(this).addClass('selected');
 
