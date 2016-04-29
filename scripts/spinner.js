@@ -1,5 +1,4 @@
 (function(window) {
-  console.log('spinner.js')
   var keyframes = sheet.add('@keyframes spin');
   var arrowStartPosition = Math.random();
   $('#arrow').css('transform', 'rotate(' + arrowStartPosition + 'turn)');
