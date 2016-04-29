@@ -37,6 +37,21 @@ $('.game-turn-type').on('click', 'button', function() {
 
       colors.length--;
     }
+
+    $('.random-order > ol > li > p').on('swiperight swipeleft', function() {
+      $(this).parent().remove();
+    })
+    .on('movestart', function(e) { // Allows window up/down scroll when dragging color.
+      if(Math.abs(e.distX) < Math.abs(e.distY)) {
+        e.preventDefault(); //prevents swipe events
+      }
+    })
+    .on('move', function(e) {
+      $(this).css('transform', 'translateX(' + e.distX + 'px)');
+    })
+    .on('moveend', function() {
+      $(this).css('transform', 'translateX(0)');
+    });
   }
 });
 
