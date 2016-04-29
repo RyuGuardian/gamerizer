@@ -2,9 +2,6 @@
 
 http://ryuguardian.github.io/gamerizer
 
-For first-player selection (around-the-table play order), maybe implement random rule:
-Oldest/youngest first
-Tallest/shortest first
-Longest/shortest hair first
-Most recently sick (from Pandemic)
-Most recent / next birthday
+Need to find more games this could help with; games that require random components for set-up but don't come with cards for said components.
+
+Could also add dice roller.

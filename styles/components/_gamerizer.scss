@@ -1,0 +1,52 @@
+.gamerizer, .decide-first {
+  background-color: $blue;
+
+  ul {
+    li {
+      display: inline-block;
+      width: 30%;
+      margin: 0 .5em;
+      padding-bottom: 1em;
+    }
+
+    button {
+      height: 3em;
+      width: 100%;
+      background-color: $orange;
+      border: none;
+      vertical-align: top;
+      border-radius: 5px;
+
+      &.selected {
+        background-color: $selected-orange;
+      }
+    }
+  }
+
+  section {
+    display: none;
+
+    h3, h4 {
+      padding-top: 0;
+    }
+  }
+}
+
+.random-order {
+  padding-bottom: 0.5em;
+
+  & > ol {
+    padding: 0 0.5em;
+
+    & > li {
+      list-style-type: decimal;
+      margin: auto;
+      width: 90%;
+
+      & > p {
+        margin: 0.5em auto;
+        padding: 0.5em 0;
+      }
+    }
+  }
+}

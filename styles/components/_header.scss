@@ -1,0 +1,17 @@
+header {
+  &.gamerizer-header-color {
+    background-color: $teal;
+  }
+
+  padding: 1em 0;
+
+  h1 {
+    display: inline;
+  }
+
+  #nav-icon {
+    position: absolute;
+    right: 5%;
+    font-size: 1.5em;
+  }
+}

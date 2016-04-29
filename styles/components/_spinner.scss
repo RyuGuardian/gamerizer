@@ -1,0 +1,21 @@
+.spinner {
+  padding-bottom: 1em;
+
+  div {
+    background-color: orange;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+
+    margin: 0 auto;
+
+    #arrow {
+      height: 250px;
+      width: 250px;
+      
+      margin: auto;
+
+      animation: spin 5s ease-out forwards;
+    }
+  }
+}

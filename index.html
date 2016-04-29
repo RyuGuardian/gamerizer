@@ -6,39 +6,26 @@
   <title>Gamerizer - Randomize your game setup!</title>
   <link rel="stylesheet" href="stylesheet.min.css">
   <script src="scripts/vendors/jquery-2.2.2.min.js"></script>
+  <script src="scripts/vendors/jquery.event.move.js"></script>
+  <script src="scripts/vendors/jquery.event.swipe.js"></script>
+  <script src="scripts/vendors/cssx.min.js"></script>
 </head>
 <body>
-  <section class="ad-astra">
-    <header>
-      <h2>Ad Astra</h2>
-    </header>
-    <h3>How many players?</h3>
-    <ul class="player-count">
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-    </ul>
+  <header class="gamerizer-header-color">
+    <h1>Gamerizer</h1>
+    <div id="nav-icon">☰</div>
+  </header>
 
-    <ul class="stars">
-      <li>Red Giant</li>
-      <li>Yellow Giant</li>
-      <li class="planet-count">?</li>
-      <li class="planet-count">?</li>
-      <li>Red Dwarf</li>
-      <li>Yellow Dwarf</li>
-      <li class="planet-count">?</li>
-      <li class="planet-count">?</li>
-      <li>Red Tail</li>
-      <li>Yellow Tail</li>
-      <li class="planet-count">?</li>
-      <li class="planet-count">?</li>
-      <li>Red Spiral</li>
-      <li>Yellow Spiral</li>
-      <li class="planet-count">?</li>
-      <li class="planet-count">?</li>
+  <nav>
+    <ul>
+      <li class="tab" data-selection="gamerizer">Gamerizer</li>
+      <li class="tab" data-selection="ad-astra">Ad Astra</li>
     </ul>
-  </section>
+  </nav>
 
-  <script src="scripts/ad_astra.js"></script>
+  <main>
+  </main>
+
+  <script src="scripts/nav.js"></script>
 </body>
 </html>
