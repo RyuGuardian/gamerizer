@@ -1,5 +1,7 @@
 (function(window) {
   var keyframes = sheet.add('@keyframes spin');
+  keyframes.nested('from', { 'transform': '' });
+  keyframes.nested('to', { 'transform': '' });
   var arrowStartPosition = Math.random();
   $('#arrow').css('transform', 'rotate(' + arrowStartPosition + 'turn)');
 
