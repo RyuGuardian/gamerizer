@@ -86,6 +86,6 @@ $('.decide-first').on('click', 'button', function() {
   }
   else if($(this).data('first') === 'spinner') {
     $('.spinner').show();
-    $.getScript('scripts/spinner.js');
+    $.getScript('https://ryuguardian.github.io/gamerizer/scripts/spinner.js');
   }
 });
